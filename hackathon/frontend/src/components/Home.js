@@ -92,7 +92,7 @@ const styles = {
   },
 
   buttonSeparator:{
-    paddingTop: 30,
+    paddingTop: 15,
     color: 'white'
   },
 };

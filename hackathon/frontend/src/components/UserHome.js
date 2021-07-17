@@ -127,7 +127,7 @@ const styles = {
     searchButton:{
         position:'relative', 
         padding:2,
-        height:'25px', 
+        height:'32px', 
         width:'70px',
         marginLeft:4,
         textAlign:'center',
