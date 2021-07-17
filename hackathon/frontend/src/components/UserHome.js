@@ -98,10 +98,12 @@ export default class UserHome extends Component {
 
 const styles = {
     body:{
-        height:'300%',
+        height:'200vh',
+        left: 0, right: 0,
         
     },
     header:{
+        left: 0, right: 0,
         height: '40vh',
         backgroundImage: `url(${bgImg})`,
         backgroundPosition: 'center',
@@ -112,7 +114,7 @@ const styles = {
     },
     bottomDiv:{
         position:'relative',
-        width:'100%',
+        left: 0, right: 0,
         marginTop:'5%',
         padding:5,
     },
@@ -140,6 +142,7 @@ const styles = {
         marginLeft:'5%',
     },
     myBox:{
+        left: 0, right: 0,
         position:'relative',
         height:'70%',
         backgroundColor: 'white',
