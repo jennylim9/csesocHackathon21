@@ -16,30 +16,82 @@ export default class UserHome extends Component {
                    <input type ='text' placeholder="Search.." style={styles.search}></input>
                     <button style={styles.searchButton}>Search</button>
                 </div>
-                    <h style={styles.head}>Showing 4 videos</h>
-                <div style={styles.myBox}>
-                    <div style={styles.vid}>
-                        <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
-                        <p>UNSW COMP1511 Lecture02</p>
-                        <p>Jenny Lim<br></br>01/07/2021</p>
+                    
+                <div style={styles.bottomDiv}>
+
+                <h style={styles.head}>Showing videos from other users: 15</h>
+                    <div style={styles.myBox}>
+                        <div style={styles.vid}>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
+                            <p>UNSW COMP9323 Lecture02</p>
+                            <p>Ezma Rizvi<br></br>16/07/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
+                            <p>UNSW COMP1521 Tutorial02</p>
+                            <p>Sohum Jain<br></br>03/07/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/NPNPk5sWIhY' />
+                            <p>UNSW MATH2859 Lecture02</p>
+                            <p>Xin Liu<br></br>25/06/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/pfPDSuC96Hw' />
+                            <p>UNSW ENGG1000 Lecture02</p>
+                            <p>Ezma Rizvi<br></br>29/05/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
+                            <p>UNSW COMP9323 Lecture02</p>
+                            <p>Ezma Rizvi<br></br>16/07/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
+                            <p>UNSW COMP1521 Tutorial02</p>
+                            <p>Sohum Jain<br></br>03/07/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
+                            <p>UNSW COMP9323 Lecture02</p>
+                            <p>Ezma Rizvi<br></br>16/07/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
+                            <p>UNSW COMP1521 Tutorial02</p>
+                            <p>Sohum Jain<br></br>03/07/2021</p>
+                        </div>
+                            
                     </div>
-                    <div style={styles.vid}>
-                        <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
-                        <p>UNSW COMP1531 Tutorial02</p>
-                        <p>Jenny Lim<br></br>23/06/2021</p>
+                <br></br><br></br><br></br>
+                <h style={styles.head}>Showing my videos: 4</h>
+                    <div style={styles.myBox}>
+                        <div style={styles.vid}>
+                            <div style={styles.circle}>L</div>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
+                            <p>UNSW COMP1511 Lecture02</p>
+                            <p>Jenny Lim<br></br>01/07/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <div style={styles.circle2}>X</div>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
+                            <p>UNSW COMP1531 Tutorial02</p>
+                            <p>Jenny Lim<br></br>23/06/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <div style={styles.circle}>L</div>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/NPNPk5sWIhY' />
+                            <p>UNSW MATH1081 Lecture02</p>
+                            <p>Jenny Lim<br></br>05/06/2021</p>
+                        </div>
+                        <div style={styles.vid}>
+                            <div style={styles.circle}>L</div>
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/pfPDSuC96Hw' />
+                            <p>UNSW ENGG1000 Lecture02</p>
+                            <p>Jenny Lim<br></br>28/05/2021</p>
+                        </div>
+                            
                     </div>
-                    <div style={styles.vid}>
-                        <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/NPNPk5sWIhY' />
-                        <p>UNSW MATH1081 Lecture02</p>
-                        <p>Jenny Lim<br></br>05/06/2021</p>
-                    </div>
-                    <div style={styles.vid}>
-                        <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/pfPDSuC96Hw' />
-                        <p>UNSW ENGG1000 Lecture02</p>
-                        <p>Jenny Lim<br></br>28/05/2021</p>
-                    </div>
-                        
-                </div>
                 <Button
                     style={styles.button}>
                     REQUEST MORE
@@ -47,6 +99,7 @@ export default class UserHome extends Component {
                 
             
             
+            </div>
             </div>
         </div>
     );
@@ -57,17 +110,27 @@ const styles = {
     div:{
     },
     body:{
-        //height:'100vh',
+        height:'170%',
     },
     header:{
         position:'absolute',
-        height:'25%',
+        height:'25vh',
         width:'100%',
         backgroundImage: `url(${bgImg})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         textAlign:'flex-end',
+        backgroundAttachment:'fixed',
+        padding:10,
+        marginBottom:5,
+        overflow:'hidden'
+    },
+    bottomDiv:{
+        position:'absolute',
+        width:'100%',
+        marginTop:'23%',
+        padding:5,
     },
     search:{
         width:'40%',
@@ -88,17 +151,16 @@ const styles = {
         borderColor:'white',
     },
     head:{
-        position:'absolute', 
+        position:'relative', 
         padding:2,
         marginLeft:'5%',
-        marginTop:'17%',
     },
     myBox:{
-        position:'absolute',
-        height:'50vh',
+        position:'relative',
+        height:'70%',
         backgroundColor: 'white',
         padding:10,
-        marginTop:'20%',
+        marginTop:'2%',
         width:'90%',
         marginLeft:'4%',
         overflowX: 'scroll',
@@ -120,7 +182,7 @@ const styles = {
     },
     button: {
 
-        position: 'absolute',
+        position: 'relative',
         justifyContent: "center",
         textAlign: "center",
         backgroundColor: "#800020",
@@ -130,8 +192,39 @@ const styles = {
         margin: '20px',
         borderColor: '#800020',
         color: 'white',
-        marginTop:'53%',
+        marginTop:'5%',
         marginLeft:'70%',
 
     },
+    circle:{
+        position:'absolute',
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'green',
+        borderRadius: '50%',
+        display: 'inline-block',
+        zIndex: 2,
+        color:'white',
+        marginLeft:'40%',
+        "font-family": 'arial',
+        "-ms-transform": "scaleX(-1) rotate(-35deg)", /* IE 9 */
+        "-webkit-transform": "scaleX(-1) rotate(-35deg)", /* Chrome, Safari, Opera */
+        "transform": "scaleX(-1) rotate(-35deg)",
+        fontSize: 40,
+        
+    },
+    circle2:{
+        position:'absolute',
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'red',
+        borderRadius: '50%',
+        display: 'inline-block',
+        zIndex: 2,
+        color:'white',
+        marginLeft:'40%',
+        "font-family": 'arial',
+        fontSize: 40,
+        
+    }
 };
