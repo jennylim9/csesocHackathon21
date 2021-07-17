@@ -10,9 +10,9 @@ export default class UserHome extends Component {
 
     return (
       
-        <div style= {styles.div}>
             <div style={styles.body}>
                 <div style={styles.header}>
+                <h style={{ fontSize: 45, color:'white',position: 'absolute',top:'10%', left:'5%',}}>View videos</h>
                    <input type ='text' placeholder="Search.." style={styles.search}></input>
                     <button style={styles.searchButton}>Search</button>
                 </div>
@@ -22,17 +22,17 @@ export default class UserHome extends Component {
                 <h style={styles.head}>Showing videos from other users: 15</h>
                     <div style={styles.myBox}>
                         <div style={styles.vid}>
-                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/OmJ-4B-mS-Y' />
                             <p>UNSW COMP9323 Lecture02</p>
                             <p>Ezma Rizvi<br></br>16/07/2021</p>
                         </div>
                         <div style={styles.vid}>
-                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/G6GKzXMIttw' />
                             <p>UNSW COMP1521 Tutorial02</p>
                             <p>Sohum Jain<br></br>03/07/2021</p>
                         </div>
                         <div style={styles.vid}>
-                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/NPNPk5sWIhY' />
+                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
                             <p>UNSW MATH2859 Lecture02</p>
                             <p>Xin Liu<br></br>25/06/2021</p>
                         </div>
@@ -40,16 +40,6 @@ export default class UserHome extends Component {
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/pfPDSuC96Hw' />
                             <p>UNSW ENGG1000 Lecture02</p>
                             <p>Ezma Rizvi<br></br>29/05/2021</p>
-                        </div>
-                        <div style={styles.vid}>
-                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
-                            <p>UNSW COMP9323 Lecture02</p>
-                            <p>Ezma Rizvi<br></br>16/07/2021</p>
-                        </div>
-                        <div style={styles.vid}>
-                            <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
-                            <p>UNSW COMP1521 Tutorial02</p>
-                            <p>Sohum Jain<br></br>03/07/2021</p>
                         </div>
                         <div style={styles.vid}>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
@@ -69,19 +59,19 @@ export default class UserHome extends Component {
                         <div style={styles.vid}>
                             <div style={styles.circle}>L</div>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
-                            <p>UNSW COMP1511 Lecture02</p>
+                            <p  onClick={event =>  window.location.href='./Video'}>UNSW COMP1511 Lecture02</p>
                             <p>Jenny Lim<br></br>01/07/2021</p>
                         </div>
                         <div style={styles.vid}>
                             <div style={styles.circle2}>X</div>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
-                            <p>UNSW COMP1531 Tutorial02</p>
+                            <p  onClick={event =>  window.location.href='./Video'}>UNSW COMP1531 Tutorial02</p>
                             <p>Jenny Lim<br></br>23/06/2021</p>
                         </div>
                         <div style={styles.vid}>
                             <div style={styles.circle}>L</div>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/NPNPk5sWIhY' />
-                            <p>UNSW MATH1081 Lecture02</p>
+                            <p  onClick={event =>  window.location.href='./Video'}>UNSW MATH1081 Lecture02</p>
                             <p>Jenny Lim<br></br>05/06/2021</p>
                         </div>
                         <div style={styles.vid}>
@@ -93,50 +83,44 @@ export default class UserHome extends Component {
                             
                     </div>
                 <Button
-                    style={styles.button}>
+                    style={styles.button} onClick={event => window.location.href = './UploadVid'}>
                     REQUEST MORE
+                    
                 </Button>
                 
             
             
             </div>
             </div>
-        </div>
     );
   }
 }
 
 const styles = {
-    div:{
-    },
     body:{
-        height:'170%',
+        height:'300%',
+        
     },
     header:{
-        position:'absolute',
-        height:'25vh',
-        width:'100%',
+        height: '40vh',
         backgroundImage: `url(${bgImg})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         textAlign:'flex-end',
         backgroundAttachment:'fixed',
-        padding:10,
-        marginBottom:5,
-        overflow:'hidden'
     },
     bottomDiv:{
-        position:'absolute',
+        position:'relative',
         width:'100%',
-        marginTop:'23%',
+        marginTop:'5%',
         padding:5,
     },
     search:{
         width:'40%',
         height:'25px',
         marginTop:'7%',
-        marginLeft:'50%',
+        marginLeft:'48%',
         borderRadius:5,
         borderColor:'white',
     },
@@ -171,6 +155,7 @@ const styles = {
         borderStyle:'solid',
         borderWidth:'2px 2px',
         borderColor:'#800020',
+        boxShadow:'5px 10px 18px #888888',
         
     },
     vid:{
@@ -211,6 +196,7 @@ const styles = {
         "-webkit-transform": "scaleX(-1) rotate(-35deg)", /* Chrome, Safari, Opera */
         "transform": "scaleX(-1) rotate(-35deg)",
         fontSize: 40,
+        boxShadow:'5px 10px 18px #888888',
         
     },
     circle2:{
@@ -225,6 +211,7 @@ const styles = {
         marginLeft:'40%',
         "font-family": 'arial',
         fontSize: 40,
+        boxShadow:'5px 10px 18px #888888',
         
     }
 };

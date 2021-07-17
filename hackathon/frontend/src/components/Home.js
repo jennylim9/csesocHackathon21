@@ -15,7 +15,7 @@ export default class Home extends Component {
 
           <div className="body" style={styles.body}>
             <h1 style={styles.head}>
-              HelpAbility
+              Welcome to HelpAbility
             </h1>
 
             <div className="buttonPosition" style={styles.buttonPosition}>
@@ -59,7 +59,7 @@ const styles = {
     textAlign: 'center',
     position: 'absolute',
     top: '30%',
-    marginLeft:'36%',
+    marginLeft:'33%',
   },
 
   head:{
