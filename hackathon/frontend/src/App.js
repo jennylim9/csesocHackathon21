@@ -6,6 +6,8 @@ import './App.css';
 import Login from './components/Login'
 import Home from './components/Home'
 import UserHome from './components/UserHome'
+import UploadVid from './components/UploadVid';
+import Video from './components/Video';
 
 class App extends React.Component {
 
@@ -17,6 +19,8 @@ class App extends React.Component {
             <Route path="/" component={Login} exact />
             <Route path="/Home" component={Home}/>
             <Route path="/UserHome" component={UserHome}/>
+            <Route path='/UploadVid' component={UploadVid}/>
+            <Route path='/Video' component={Video}/>
           </Switch>
         </div>
       </BrowserRouter>
