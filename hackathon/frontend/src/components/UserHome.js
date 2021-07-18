@@ -59,25 +59,25 @@ export default class UserHome extends Component {
                         <div style={styles.vid}>
                             <div style={styles.circle}>L</div>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Pxh4MH0QJio' />
-                            <p  onClick={event =>  window.location.href='./Video'}>UNSW COMP1511 Lecture02</p>
+                            <p  onClick={event =>  window.location.href='./Video'} style = {styles.clickTitle}  >UNSW COMP1511 Lecture02</p>
                             <p>Jenny Lim<br></br>01/07/2021</p>
                         </div>
                         <div style={styles.vid}>
                             <div style={styles.circle2}>X</div>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/Dzg6WYRtBLk' />
-                            <p  onClick={event =>  window.location.href='./Video'}>UNSW COMP1531 Tutorial02</p>
+                            <p  onClick={event =>  window.location.href='./Video'} style = {styles.clickTitle}>UNSW COMP1531 Tutorial02</p>
                             <p>Jenny Lim<br></br>23/06/2021</p>
                         </div>
                         <div style={styles.vid}>
                             <div style={styles.circle}>L</div>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/NPNPk5sWIhY' />
-                            <p  onClick={event =>  window.location.href='./Video'}>UNSW MATH1081 Lecture02</p>
+                            <p  onClick={event =>  window.location.href='./Video'} style = {styles.clickTitle} >UNSW MATH1081 Lecture02</p>
                             <p>Jenny Lim<br></br>05/06/2021</p>
                         </div>
                         <div style={styles.vid}>
                             <div style={styles.circle}>L</div>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/pfPDSuC96Hw' />
-                            <p>UNSW ENGG1000 Lecture02</p>
+                            <p onClick={event =>  window.location.href='./Video'} style = {styles.clickTitle} >UNSW ENGG1000 Lecture02</p>
                             <p>Jenny Lim<br></br>28/05/2021</p>
                         </div>
                             
@@ -135,6 +135,7 @@ const styles = {
         textAlign:'center',
         borderRadius:5,
         borderColor:'white',
+        cursor:"pointer"
     },
     head:{
         position:'relative', 
@@ -182,7 +183,7 @@ const styles = {
         color: 'white',
         marginTop:'5%',
         marginLeft:'70%',
-
+        cursor:"pointer"
     },
     circle:{
         position:'absolute',
@@ -216,5 +217,10 @@ const styles = {
         fontSize: 40,
         boxShadow:'5px 10px 18px #888888',
         
+    },
+    clickTitle: {
+        color: "Blue", 
+        textDecoration: "underline", 
+        cursor:"pointer"
     }
 };

@@ -190,7 +190,6 @@ const styles = {
         marginRight:10,
       },
       button: {
-
         position: 'relative',
         justifyContent: "center",
         textAlign: "center",
@@ -202,7 +201,7 @@ const styles = {
         borderColor: '#800020',
         color: 'white',
         marginLeft:'70%',
-
+        cursor:"pointer"
     },
   
   
