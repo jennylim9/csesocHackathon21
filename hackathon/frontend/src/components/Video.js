@@ -166,5 +166,9 @@ const styles = {
         display: "flex",
         "justify-content": "space-between",
         "box-sizing": "border-box",
-    }
+    },
+    buttonSeparator:{
+        paddingTop: 15,
+        color: 'white'
+      },
 };

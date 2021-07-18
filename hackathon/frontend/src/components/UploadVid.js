@@ -123,6 +123,16 @@ export default class UploadVid extends Component {
                         type="file"
                         style={styles.input}
                     />
+                    <h3 style={styles.buttonSeparator}>
+                    Or 
+                    </h3>
+                    <Input
+                        type="text"
+                        value={this.state.tag}
+                        onChange={this.handleChange}
+                        placeholder={"link the video here"}
+                        style={styles.input}
+                    />
                 </FormGroup>
 
                 <Button onClick={event => window.location.href = './UserHome'} style={styles.button}> Upload

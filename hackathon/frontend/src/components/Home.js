@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import bgImg from '../assets/studypic.jpg';
-
+import logoImg from '../assets/HelpAbility.png'
 
 
 export default class Home extends Component {
@@ -11,8 +11,7 @@ export default class Home extends Component {
     return (
       <div style={styles.div}>
       <div  style={styles.background}>
-
-
+        <img src={logoImg} alt="Logo" style={styles.logo} />
           <div className="body" style={styles.body}>
             <h1 style={styles.head}>
               Welcome to HelpAbility
@@ -51,8 +50,10 @@ const styles = {
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   },
-
-
+  logo: {
+    left: '34%',
+    position: 'sticky'
+  },
 
   body: {
     margin: '0',
