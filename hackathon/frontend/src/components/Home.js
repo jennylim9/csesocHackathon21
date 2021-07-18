@@ -90,6 +90,7 @@ const styles = {
     borderColor: "#800020",
     fontColor:"white",
     fontSize:20,
+    cursor:"pointer"
   },
 
   buttonSeparator:{

@@ -77,7 +77,7 @@ export default class UserHome extends Component {
                         <div style={styles.vid}>
                             <div style={styles.circle}>L</div>
                             <ReactPlayer style={styles.vid} width='320px' height='180px' url='https://youtu.be/pfPDSuC96Hw' />
-                            <p>UNSW ENGG1000 Lecture02</p>
+                            <p onClick={event =>  window.location.href='./Video'} style = {styles.clickTitle} >UNSW ENGG1000 Lecture02</p>
                             <p>Jenny Lim<br></br>28/05/2021</p>
                         </div>
                             
@@ -135,6 +135,7 @@ const styles = {
         textAlign:'center',
         borderRadius:5,
         borderColor:'white',
+        cursor:"pointer"
     },
     head:{
         position:'relative', 
@@ -182,7 +183,7 @@ const styles = {
         color: 'white',
         marginTop:'5%',
         marginLeft:'70%',
-
+        cursor:"pointer"
     },
     circle:{
         position:'absolute',
