@@ -13,9 +13,6 @@ export default class Home extends Component {
       <div  style={styles.background}>
         <img src={logoImg} alt="Logo" style={styles.logo} />
           <div className="body" style={styles.body}>
-            <h1 style={styles.head}>
-              Welcome to HelpAbility
-            </h1>
 
             <div className="buttonPosition" style={styles.buttonPosition}>
               <Button style={styles.button} onClick={event =>  window.location.href='./UserHome'}>
@@ -52,15 +49,15 @@ const styles = {
   },
   logo: {
     left: '34%',
-    position: 'sticky'
+    position: 'sticky',
   },
 
   body: {
     margin: '0',
     textAlign: 'center',
     position: 'absolute',
-    top: '30%',
-    marginLeft:'33%',
+    top: '50%',
+    marginLeft:'36%',
   },
 
   head:{

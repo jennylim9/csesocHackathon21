@@ -38,7 +38,7 @@ export default class Video extends Component {
                                 activeColor="#ffd700"
                             />
                             <Button
-                                style={styles.button2} onClick={event => window.location.href = './UploadVid'}>
+                                style={styles.button2} onClick={event => window.location.href = './Profile'}>
                                 Contact Tutor
                             </Button>
                         
@@ -48,12 +48,12 @@ export default class Video extends Component {
                             
                     </div>
                 <Button
-                    style={styles.button} onClick={event => window.location.href = './UploadVid'}>
+                    style={styles.button} onClick={event => window.location.href = './Profile'}>
                     Open Audio Notes
                 
                 </Button>
                 <Button
-                    style={styles.button} onClick={event => window.location.href = './UploadVid'}>
+                    style={styles.button} onClick={event => window.location.href = './Profile'}>
                     View Written Notes
                 </Button>
                 
